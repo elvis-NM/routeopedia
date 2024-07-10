@@ -4,6 +4,7 @@ import React from "react";
 
 function Product() {
   const navigate = useNavigate();
+
   const [goToProduct, setGoToProduct] = useState(() => {
     return false;
   });
