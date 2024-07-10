@@ -4,7 +4,7 @@ import Footer from "./Layout/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import CryptoDetails from "./CryptoDetails";
+import CryptoDetail from "./CryptoDetail";
 import Product from "./Pages/Product";
 import ProductList from "./Pages/ProductList";
 import ProductDetails from "./Pages/ProductDetails";
@@ -20,6 +20,14 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route
+          path="/cryptodetail/:cryptoSymbol/:id"
+          element={<CryptoDetail />}
+        ></Route>
+        <Route
+          path="/cryptodetail/:cryptoSymbol"
+          element={<CryptoDetail />}
+        ></Route>
         <Route path="product">
           <Route path="" element={<Product />}></Route>
           <Route path="list" element={<ProductList />}></Route>
