@@ -32,7 +32,7 @@ root.render(
           <Route path="" element={<Product />}></Route>
           <Route path="list" element={<ProductList />}></Route>
           <Route path="create" element={<CreateProduct />}></Route>
-          <Route path="details" element={<ProductDetails />}></Route>
+          <Route path="details/:productId" element={<ProductDetails />}></Route>
         </Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
